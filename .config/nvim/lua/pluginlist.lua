@@ -17,4 +17,5 @@ return {
     end,
   },
   "neovim/nvim-lspconfig",
+  "EdenEast/nightfox.nvim",
 }
