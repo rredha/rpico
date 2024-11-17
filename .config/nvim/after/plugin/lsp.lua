@@ -1,4 +1,6 @@
 local on_attach = function (_, bufnr)
+  -- _ : client
+  -- bufnr : buffer number
   -- Helper funtion for keymappings
   local bufmap = function (keys, func)
     vim.keymap.set('n', keys, func, { buffer = bufnr })
