@@ -45,5 +45,11 @@ return {
     end,
   },
   "neovim/nvim-lspconfig",
-  "EdenEast/nightfox.nvim",
+  {
+    "EdenEast/nightfox.nvim",
+	priority = 1000,
+	config = function()
+		vim.cmd("colorscheme nightfox")
+	end
+  },
 }
