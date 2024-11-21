@@ -63,4 +63,10 @@ return {
 		"folke/neodev.nvim", -- nvim namespace
 	},
   },
+  {
+	  'nvim-telescope/telescope.nvim',
+	  dependencies = {
+		  'nvim-lua/plenary.nvim'
+	  },
+  },
 }
