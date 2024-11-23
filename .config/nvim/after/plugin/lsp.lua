@@ -5,7 +5,6 @@ local on_attach = function (_, bufnr)
   local bufmap = function (keys, func)
     vim.keymap.set('n', keys, func, { buffer = bufnr })
   end
-  local telescope = require("telescope")
   -- lsp keymappins
   bufmap('<leader>r', vim.lsp.buf.rename)
   bufmap('<leader>a', vim.lsp.buf.code_action)
@@ -17,9 +16,9 @@ local on_attach = function (_, bufnr)
 
 
   -- telescope
-  bufmap('gr', telescope.lsp_references)
-  bufmap('<leader>s', telescope.lsp_document_symbols)
-  bufmap('<leader>S', telescope.lsp_dynamic_workspace_symbols)
+  bufmap('gr', require("telescope.builtin").lsp_references)
+  bufmap('<leader>s', require("telescope.builtin").lsp_document_symbols)
+  bufmap('<leader>S', require("telescope.builtin").lsp_dynamic_workspace_symbols)
 
   bufmap('K', vim.lsp.buf.hover)
 

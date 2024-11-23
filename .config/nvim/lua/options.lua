@@ -1,9 +1,6 @@
--- basic neovim setup
---
+-- neovim-basic
+-- sane default options i cant live without...
 
--- leader : space
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
 
 -- clipboard using xclip
 vim.o.clipboard = 'unnamedplus'
@@ -16,8 +13,8 @@ vim.o.relativenumber = true
 vim.o.signcolumn = 'yes'
 
 -- tab spaces configuration
-vim.o.tabstop = 4
-vim.o.shiftwidth = 4
+vim.o.tabstop = 2
+vim.o.shiftwidth = 2
 
 -- update time
 vim.o.updatetime = 300
