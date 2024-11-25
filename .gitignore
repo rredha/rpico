@@ -1,2 +1,6 @@
 .local/
 .config/gh
+.ccls*
+CMake*
+pico-examples/CMakeFiles
+pico-examples/CMakeCache.txt
