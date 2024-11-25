@@ -18,10 +18,10 @@ bufmapn("<esc>", ":noh<CR>")
 
 
 -- buffers
-bufmapn("<leader>b", ":b<CR>") -- list
-bufmapn("<leader>d", ":bd<CR>") -- close
-bufmapn("<leader>t", ":bn<CR>") -- next
-bufmapn("<leader>s", ":bp<CR>") -- next
+bufmapn("<leader>b", ":Telescope buffers<CR>") -- list
+bufmapn("<leader>bd", ":bd<CR>") -- close
+bufmapn("<leader>bt", ":bn<CR>") -- next
+bufmapn("<leader>bs", ":bp<CR>") -- next
 
 -- resize with arrows
 bufmapn("<C-Up>", ":resize -2<CR>")
