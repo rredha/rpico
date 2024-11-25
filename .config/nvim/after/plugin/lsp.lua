@@ -42,3 +42,10 @@ capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 			},
 		}
 	}
+	require("lspconfig").ccls.setup {
+		init_options = {
+			cache = {
+				directory = ".ccls-cache";
+			};
+		}
+	}
