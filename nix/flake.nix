@@ -3,8 +3,8 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    basic-nixvim-flake.url = "github:rredha/neovim-basic/nix?dir=nixvim";
-    pico-sdk-nixpkgs.url = "github:nixpkgs/932fc16b263f26803d3960e4400bc13dde84a972";
+    #basic-nixvim-flake.url = "github:rredha/neovim-basic/nix?dir=nixvim";
+    sdk.url = "github:nixos/nixpkgs?ref=nixos-23.05";
   };
 
   outputs = { self, nixpkgs, ... }@inputs:
@@ -17,7 +17,7 @@
         pkgs.mkShell
           {
             nativeBuildInputs = with pkgs; [
-              inputs.pico-sdk-nixpkgs.legacyPackages.${system}.pico-sdk
+              inputs.sdk.legacyPackages.${system}.pico-sdk
               gcc-arm-embedded
               gcc
               cmake
